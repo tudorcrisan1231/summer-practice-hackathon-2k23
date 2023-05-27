@@ -57,7 +57,12 @@ class Home extends Component
     }
 
     public function generateCode(){
-        $code = rand(100000, 999999);
+        $code = '';
+        $characters = '0123456789';
+        $charactersLength = strlen($characters);
+        for ($i = 0; $i < 6; $i++) {
+            $code .= $characters[rand(0, $charactersLength - 1)];
+        }
         return $code;
     }
 
