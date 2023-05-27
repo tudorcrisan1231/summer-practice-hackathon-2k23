@@ -38,3 +38,12 @@ Documentation and clean code will be highly appreciated.
 Have fun!
 
 Best of luck! Happy hacking!
+
+
+**DOCUMENTATION:**
+
+First action you can do in my application is to add a new MFA name-code pair or you can generate a random one (powerd by https://swapi.dev/api/people). You can do this by clicking on the "+" button. After you click on the button, a form will appear. You can fill the form with your own data or you can generate a random one. After you fill the form, you can click on the "Add" button to add the new MFA name-code pair. If you want to cancel the action, you can click on the "X" button.
+
+The second action you can do in my application is to view all the available MFA name-code pairs along with the unique code for each one and the time left until they expire and are regenerated. You can delete/edit/copy codes for each item. If you want to delete an item, you can click on the "Delete" icon. If you want to edit an item, you can click on the "Edit" icon. If you want to copy the code for an item, you can click the code itself.
+
+Every codes are regenerated once every 30 seconds and saved in a mysql database.
